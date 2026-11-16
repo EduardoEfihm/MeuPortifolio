@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Eduardo Oliveira</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header-bg">
+        <div class="top-controls" role="group" aria-label="Controles de aparência e idioma">
+            <button id="btn-idioma" class="btn-topo" onclick="alternarIdioma()" title="Mudar idioma / Change language">
+                EN
+            </button>
+            <span class="divisor-topo"></span>
+            <button id="btn-tema" class="btn-topo" onclick="modoEscuro()" title="Alternar tema da página">
+                Modo Escuro
+            </button>
+        </div>
+
+        <h1 id="titulo-principal">Eduardo Oliveira da Silva</h1>
+        <p id="header-subtitulo"><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas | <strong>Local:</strong>
+            Osasco-SP</p>
+    </header>
+
+    <div class="container">
+        <nav class="card">
+            <a href="#sobre" data-i18n="nav_sobre">Sobre</a>
+            <a href="#Tecnologias" data-i18n="nav_tecnologias">Tecnologias</a>
+            <a href="#Conhecimentos" data-i18n="nav_conhecimentos">Conhecimentos</a>
+            <a href="#Hobbies" data-i18n="nav_hobbies">Hobbies</a>
+            <a href="#Objetivos" data-i18n="nav_objetivos">Objetivos</a>
+            <a href="#Links" data-i18n="nav_links">Links</a>
+            <a href="#Sites" data-i18n="nav_sites">Sites</a>
+            <a href="#Rotina" data-i18n="nav_rotina">Rotina</a>
+            <a href="#Contato" data-i18n="nav_contato">Contato</a>
+            <a href="#Projetos" data-i18n="nav_projetos">Projetos</a>
+        </nav>
+
+        <main>
+            <section id="sobre" class="card">
+                <h2 data-i18n="sobre_titulo">Quem sou eu</h2>
+                <p data-i18n="sobre_p1">Sou um estudante da área de tecnologia, atualmente focado em desenvolvimento
+                    web. Estou me
+                    aperfeiçoando em algumas linguagens de programação como Java e Python, além de estudar também o
+                    front-end em HTML, CSS e JavaScript. Também tenho um gosto por desenvolvimento de jogos e pixel art.
+                    Estou à procura da minha primeira experiência profissional para me inserir no mercado de trabalho.
+                </p>
+                <p data-i18n="sobre_p2">O que me motiva a estudar tecnologia é a minha curiosidade em descobrir como as
+                    coisas funcionam por
+                    trás das cortinas. Acredito que estudando essa área eu terei uma visão ainda mais ampla de tudo a
+                    minha volta.</p>
+            </section>
+
+            <section id="Tecnologias" class="card">
+                <h2 data-i18n="tech_titulo">Tecnologias que já vi</h2>
+                <ul class="tech-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                </ul>
+            </section>
+
+            <section id="Conhecimentos" class="card">
+                <h2 data-i18n="conhec_titulo">Meus Conhecimentos</h2>
+                <table>
+                    <tr>
+                        <th data-i18n="th_tecnologia">Tecnologia</th>
+                        <th data-i18n="th_nivel">Nível</th>
+                        <th data-i18n="th_experiencia">Experiência</th>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td data-i18n="nivel_basico">Básico</td>
+                        <td data-i18n="exp_2m">2 meses</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td data-i18n="nivel_iniciante">Iniciante</td>
+                        <td data-i18n="exp_1m">1 mês</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td data-i18n="nivel_breve">Em breve</td>
+                        <td>-------</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="Hobbies" class="card">
+                <h2 data-i18n="hobbies_titulo">Meus hobbies para horas vagas</h2>
+
+                <div class="hobbies-flex">
+                    <img src="assets/imagens/elden_ring.jpg" alt="Elden Ring">
+                    <img src="assets/imagens/campo_minado.png" alt="Campo Minado">
+                    <img src="assets/imagens/muay_thai.jpg" alt="Muay Thai">
+                </div>
+
+                <ul class="list" style="list-style-type: square;">
+                    <li data-i18n="hobby_1">Jogar Elden Ring e campo minado.</li>
+                    <li data-i18n="hobby_2">Ouvir música.</li>
+                    <li data-i18n="hobby_3">Assistir vídeos.</li>
+                    <li data-i18n="hobby_4">Praticar Muay thai.</li>
+                    <li data-i18n="hobby_5">Fazer exercícios físicos.</li>
+                    <li data-i18n="hobby_6">Conversar sobre algum tema interessante.</li>
+                </ul>
+            </section>
+
+            <section id="Objetivos" class="card">
+                <h2 data-i18n="obj_titulo">Objetivos profissionais</h2>
+                <ol class="list" type="I">
+                    <li id="obj_1"><strong>Curto prazo (6 meses): </strong>Desenvolver um projeto completo com Java e
+                        HTML.</li>
+                    <li id="obj_2"><strong>Médio prazo (1-2 anos): </strong>Conseguir um estágio na minha área de
+                        estudo.</li>
+                    <li id="obj_3"><strong>Longo prazo (3-5 anos): </strong>Estar consolidado na minha carreira de
+                        Desenvolvimento.</li>
+                </ol>
+            </section>
+
+            <section id="Projetos" class="card">
+                <h2 data-i18n="proj_titulo">Meus Projetos</h2>
+                <div class="projetos-grid">
+                    <div class="projeto-card">
+                        <h3 data-i18n="proj1_titulo">Xadrez</h3>
+                        <p data-i18n="proj1_desc">Desenvolvi uma partida de xadrez puramente usando Java, com lógica de
+                            programação e com
+                            poucas API. O jogo roda no terminal e no CMD.</p>
+                    </div>
+                    <div class="projeto-card">
+                        <h3>WorkShop</h3>
+                        <p data-i18n="proj2_desc">Um sistemas de produtos e usuários sem integração com banco de dados,
+                            é um projeto um pouco
+                            mais avançado em que utilizei SpringBoot.</p>
+                    </div>
+                    <div class="projeto-card">
+                        <h3 data-i18n="proj3_titulo">Sistema de Comentários</h3>
+                        <p data-i18n="proj3_desc">Um sistema que desenvolvi com o objetivo de estudar a integração com
+                            MongoDB, funciona como
+                            uma rede de post e comentários.</p>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <section id="Links" class="card">
+                <h2 data-i18n="links_titulo">Links para me encontrar</h2>
+                <ul class="list">
+                    <li><a href="https://github.com/EduardoEfihm" target="_blank" data-i18n="link_github">Meu GitHub</a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/eduardo-oliveira-profissional" target="_blank"
+                            data-i18n="link_linkedin">Meu Linkedin</a></li>
+                    <li><a href="mailto:eduardoogrand@gmail.com" target="_blank" data-i18n="link_email">Meu e-mail</a>
+                    </li>
+                </ul>
+
+                <div class="curriculo-box">
+                    <a href="assets/documentos/Eduardo-Oliveira-Curriculo.pdf" download="Eduardo-OliveiraCurriculo.pdf"
+                        class="btn-curriculo" data-i18n="btn_curriculo">
+                        📄 Baixar Currículo (PDF)
+                    </a>
+                </div>
+            </section>
+
+            <section id="Sites" class="card">
+                <h2 data-i18n="sites_titulo">TOP 5 sites que mais acesso</h2>
+                <ol class="list">
+                    <li><a href="https://minesweeper.online" target="_blank" data-i18n="site_minesweeper">Campo
+                            minado</a></li>
+                    <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
+                    <li><a href="https://udemy.com" target="_blank">Udemy</a></li>
+                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    <li><a href="https://google.com" target="_blank">Google</a></li>
+                </ol>
+            </section>
+
+            <section id="Rotina" class="card">
+                <h2 data-i18n="rotina_titulo">Minha rotina de estudos</h2>
+                <table>
+                    <tr>
+                        <th data-i18n="th_dia">Dia</th>
+                        <th data-i18n="th_atividade">Atividade</th>
+                        <th data-i18n="th_duracao">Duração</th>
+                    </tr>
+                    <tr>
+                        <td data-i18n="dia_seg">Segunda-feira</td>
+                        <td>Java</td>
+                        <td data-i18n="dur_2h">2 horas</td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="dia_ter">Terça-feira</td>
+                        <td>HTML</td>
+                        <td data-i18n="dur_2h">2 horas</td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="dia_qua">Quarta-feira</td>
+                        <td data-i18n="ativ_java">Praticar exercícios em Java</td>
+                        <td data-i18n="dur_2h">2 horas</td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="dia_qui">Quinta-feira</td>
+                        <td data-i18n="ativ_html">Praticar exercícios em HTML</td>
+                        <td data-i18n="dur_2h">2 horas</td>
+                    </tr>
+                </table>
+            </section>
+
+            <aside class="card">
+                <h3 data-i18n="aside_titulo">Curiosidade sobre mim</h3>
+                <p data-i18n="aside_texto">Prefiro ficar 5 horas seguidas no computador do que 2 horas em uma festa.</p>
+            </aside>
+        </main>
+
+        <section id="Contato" class="card">
+            <h2 data-i18n="contato_titulo">Entre em contato</h2>
+
+            <form id="formContato">
+                <div class="form-group">
+                    <label for="nomeContato" data-i18n="label_nome">Nome (mín. 3 caracteres):</label>
+                    <input type="text" id="nomeContato" required minlength="3" placeholder="Seu nome completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="emailContato" data-i18n="label_email">E-mail:</label>
+                    <input type="email" id="emailContato" required placeholder="seu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="assunto" data-i18n="label_assunto">Assunto:</label>
+                    <input type="text" id="assunto" required placeholder="Dúvida, sugestão, orçamento...">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagemContato" data-i18n="label_mensagem">Mensagem (mín. 10 caracteres):</label>
+                    <textarea id="mensagemContato" required minlength="10"
+                        placeholder="Digite sua mensagem aqui..."></textarea>
+                </div>
+
+                <button type="submit" data-i18n="btn_enviar">Enviar Mensagem</button>
+            </form>
+
+            <p id="feedback"></p>
+        </section>
+    </div>
+
+    <footer>
+        <p data-i18n="footer_texto">© 2026 - Eduardo Oliveira | Análise e Desenvolvimento de Sistemas</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
