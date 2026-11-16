@@ -20,7 +20,6 @@
             <button id="btn-idioma" class="btn-topo" onclick="alternarIdioma()" title="Mudar idioma / Change language">
                 EN
             </button>
-            <span class="divisor-topo"></span>
             <button id="btn-tema" class="btn-topo" onclick="modoEscuro()" title="Alternar tema da página">
                 Modo Escuro
             </button>
@@ -73,28 +72,30 @@
 
             <section id="Conhecimentos" class="card">
                 <h2 data-i18n="conhec_titulo">Meus Conhecimentos</h2>
-                <table>
-                    <tr>
-                        <th data-i18n="th_tecnologia">Tecnologia</th>
-                        <th data-i18n="th_nivel">Nível</th>
-                        <th data-i18n="th_experiencia">Experiência</th>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td data-i18n="nivel_basico">Básico</td>
-                        <td data-i18n="exp_2m">2 meses</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td data-i18n="nivel_iniciante">Iniciante</td>
-                        <td data-i18n="exp_1m">1 mês</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td data-i18n="nivel_breve">Em breve</td>
-                        <td>-------</td>
-                    </tr>
-                </table>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th data-i18n="th_tecnologia">Tecnologia</th>
+                            <th data-i18n="th_nivel">Nível</th>
+                            <th data-i18n="th_experiencia">Experiência</th>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td data-i18n="nivel_basico">Básico</td>
+                            <td data-i18n="exp_2m">2 meses</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td data-i18n="nivel_iniciante">Iniciante</td>
+                            <td data-i18n="exp_1m">1 mês</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td data-i18n="nivel_breve">Em breve</td>
+                            <td>-------</td>
+                        </tr>
+                    </table>
+                </div>
             </section>
 
             <section id="Hobbies" class="card">
@@ -164,7 +165,7 @@
                 </ul>
 
                 <div class="curriculo-box">
-                    <a href="assets/documentos/Eduardo-Oliveira-Curriculo.pdf" download="Eduardo-OliveiraCurriculo.pdf"
+                    <a href="assets/documentos/Eduardo-Oliveira-Curriculo.pdf" download="Eduardo-Oliveira-Curriculo.pdf"
                         class="btn-curriculo" data-i18n="btn_curriculo">
                         📄 Baixar Currículo (PDF)
                     </a>
@@ -185,33 +186,35 @@
 
             <section id="Rotina" class="card">
                 <h2 data-i18n="rotina_titulo">Minha rotina de estudos</h2>
-                <table>
-                    <tr>
-                        <th data-i18n="th_dia">Dia</th>
-                        <th data-i18n="th_atividade">Atividade</th>
-                        <th data-i18n="th_duracao">Duração</th>
-                    </tr>
-                    <tr>
-                        <td data-i18n="dia_seg">Segunda-feira</td>
-                        <td>Java</td>
-                        <td data-i18n="dur_2h">2 horas</td>
-                    </tr>
-                    <tr>
-                        <td data-i18n="dia_ter">Terça-feira</td>
-                        <td>HTML</td>
-                        <td data-i18n="dur_2h">2 horas</td>
-                    </tr>
-                    <tr>
-                        <td data-i18n="dia_qua">Quarta-feira</td>
-                        <td data-i18n="ativ_java">Praticar exercícios em Java</td>
-                        <td data-i18n="dur_2h">2 horas</td>
-                    </tr>
-                    <tr>
-                        <td data-i18n="dia_qui">Quinta-feira</td>
-                        <td data-i18n="ativ_html">Praticar exercícios em HTML</td>
-                        <td data-i18n="dur_2h">2 horas</td>
-                    </tr>
-                </table>
+                <div class="table-responsive">
+                    <table>
+                        <tr>
+                            <th data-i18n="th_dia">Dia</th>
+                            <th data-i18n="th_atividade">Atividade</th>
+                            <th data-i18n="th_duracao">Duração</th>
+                        </tr>
+                        <tr>
+                            <td data-i18n="dia_seg">Segunda-feira</td>
+                            <td>Java</td>
+                            <td data-i18n="dur_2h">2 horas</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="dia_ter">Terça-feira</td>
+                            <td>HTML</td>
+                            <td data-i18n="dur_2h">2 horas</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="dia_qua">Quarta-feira</td>
+                            <td data-i18n="ativ_java">Praticar exercícios em Java</td>
+                            <td data-i18n="dur_2h">2 horas</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="dia_qui">Quinta-feira</td>
+                            <td data-i18n="ativ_html">Praticar exercícios em HTML</td>
+                            <td data-i18n="dur_2h">2 horas</td>
+                        </tr>
+                    </table>
+                </div>
             </section>
 
             <aside class="card">
