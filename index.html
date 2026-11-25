@@ -15,11 +15,16 @@
 
 <body>
 
+    <div class="gtranslate_wrapper"></div>
+    <script>window.gtranslateSettings = {
+            "default_language": "pt", "languages": ["pt", "en"],
+            "wrapper_selector": ".gtranslate_wrapper",
+            "switcher_vertical_position": "top",
+            "float_switcher_open_direction": "bottom",
+            "alt_flags": { "en": "usa", "pt": "brazil" }
+        }</script>
     <header class="header-bg">
         <div class="top-controls" role="group" aria-label="Controles de aparência e idioma">
-            <button id="btn-idioma" class="btn-topo" onclick="alternarIdioma()" title="Mudar idioma / Change language">
-                EN
-            </button>
             <button id="btn-tema" class="btn-topo" onclick="modoEscuro()" title="Alternar tema da página">
                 Modo Escuro
             </button>
@@ -32,9 +37,9 @@
 
     <div class="container">
         <nav class="card">
-            <a href="#sobre" data-i18n="nav_sobre">Sobre</a>
+            <a href="#sobre" data-i18n="nav_sobre">Sobre mim</a>
             <a href="#Tecnologias" data-i18n="nav_tecnologias">Tecnologias</a>
-            <a href="#Conhecimentos" data-i18n="nav_conhecimentos">Conhecimentos</a>
+            <a href="#Conhecimentos" data-i18n="nav_conhecimentos">Skils</a>
             <a href="#Hobbies" data-i18n="nav_hobbies">Hobbies</a>
             <a href="#Objetivos" data-i18n="nav_objetivos">Objetivos</a>
             <a href="#Links" data-i18n="nav_links">Links</a>
@@ -71,7 +76,7 @@
             </section>
 
             <section id="Conhecimentos" class="card">
-                <h2 data-i18n="conhec_titulo">Meus Conhecimentos</h2>
+                <h2 data-i18n="conhec_titulo">Minhas Habilidades</h2>
                 <div class="table-responsive">
                     <table>
                         <tr>
@@ -80,18 +85,23 @@
                             <th data-i18n="th_experiencia">Experiência</th>
                         </tr>
                         <tr>
+                            <td>Java</td>
+                            <td data-i18n="nivel_basico">Intermediário</td>
+                            <td data-i18n="exp_2m">12 meses</td>
+                        </tr>
+                        <tr>
                             <td>HTML</td>
                             <td data-i18n="nivel_basico">Básico</td>
                             <td data-i18n="exp_2m">6 meses</td>
                         </tr>
                         <tr>
                             <td>CSS</td>
-                            <td data-i18n="nivel_iniciante">Iniciante</td>
+                            <td data-i18n="nivel_iniciante">Básico</td>
                             <td data-i18n="exp_1m">6 mês</td>
                         </tr>
                         <tr>
                             <td>JavaScript</td>
-                            <td data-i18n="nivel_breve">Iniciante</td>
+                            <td data-i18n="nivel_breve">Básico</td>
                             <td data-i18n="exp_1m">6 mês</td>
                         </tr>
                     </table>
@@ -260,6 +270,7 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 </body>
 
 </html>
